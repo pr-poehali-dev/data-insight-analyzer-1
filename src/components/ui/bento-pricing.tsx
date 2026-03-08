@@ -91,7 +91,7 @@ export function BentoPricing() {
         </div>
         <div className="flex items-center gap-3 p-3">
           <Badge variant="secondary" className="bg-white/10 text-white border-white/20 font-open-sans-custom text-xs">
-            ПРЕМИУМ
+            ПРОДАВЕЦ ПРО
           </Badge>
           <Badge
             variant="outline"
@@ -101,23 +101,23 @@ export function BentoPricing() {
           </Badge>
           <div className="ml-auto">
             <Button size="sm" className="bg-white text-black hover:bg-gray-100 font-open-sans-custom text-xs">
-              Подписаться
+              Подключить
             </Button>
           </div>
         </div>
         <div className="flex flex-col p-3 lg:flex-row">
           <div className="pb-2 lg:w-[30%]">
             <span className="font-mono text-3xl font-semibold tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)]">
-              2 000 ₽
+              999 ₽
             </span>
             <span className="text-gray-300 text-xs font-open-sans-custom">/мес</span>
           </div>
           <ul className="text-gray-300 grid gap-2 text-xs lg:w-[70%] font-open-sans-custom">
             {[
-              "2 000 ₽ кредитов включено ежемесячно",
-              "Докупайте кредиты сверх месячного лимита",
-              "5x увеличенный лимит вложений",
-              "Импорт дизайнов из популярных инструментов",
+              "До 50 активных объявлений одновременно",
+              "Поднятие в топ поиска 5 раз в месяц",
+              "Выделение объявлений цветом и значком",
+              "Подробная аналитика просмотров и откликов",
             ].map((f, i) => (
               <li key={i} className="flex items-center gap-2">
                 <Check className="w-[1.05rem] h-[1.05rem] text-white flex-shrink-0" strokeWidth={3} />
@@ -129,47 +129,49 @@ export function BentoPricing() {
       </div>
 
       <PricingCard
-        titleBadge="СТАРТ"
+        titleBadge="БЕСПЛАТНО"
         priceLabel="0 ₽"
         features={[
-          "500 ₽ кредитов включено ежемесячно",
-          "Деплой приложений в облако",
-          "Визуальное редактирование",
-          "Синхронизация с Git",
+          "До 5 активных объявлений",
+          "Чат с покупателями",
+          "Фото до 5 штук на объявление",
+          "Базовый поиск по категориям",
         ]}
         className="lg:col-span-3"
         cta="Начать"
       />
 
       <PricingCard
-        titleBadge="КОМАНДА"
-        priceLabel="3 000 ₽"
-        priceSuffix="/чел/мес"
+        titleBadge="СТАРТ"
+        priceLabel="299 ₽"
+        priceSuffix="/мес"
         features={[
-          "3 000 ₽ кредитов на участника ежемесячно",
-          "Единый биллинг и управление командой",
-          "Общие чаты и совместная работа",
+          "До 20 активных объявлений",
+          "Поднятие в топ 2 раза в месяц",
+          "Фото до 15 штук на объявление",
         ]}
         className="lg:col-span-4"
+        cta="Подключить"
       />
 
       <PricingCard
         titleBadge="БИЗНЕС"
-        priceLabel="10 000 ₽"
-        priceSuffix="/чел/мес"
-        features={["3 000 ₽ кредитов на участника ежемесячно", "Отключение обучения по умолчанию", "Полный доступ к API"]}
+        priceLabel="2 999 ₽"
+        priceSuffix="/мес"
+        features={["Неограниченные объявления", "Приоритет в поиске всегда", "Персональный менеджер"]}
         className="lg:col-span-4"
+        cta="Подключить"
       />
 
       <PricingCard
-        titleBadge="КОРПОРАЦИЯ"
+        titleBadge="КОРПОРАТИВНЫЙ"
         priceLabel="По запросу"
         priceSuffix=""
         features={[
-          "Отключение обучения по умолчанию",
-          "SAML SSO",
-          "Приоритетный доступ",
-          "Персональная поддержка",
+          "Индивидуальные условия размещения",
+          "API-интеграция с вашей CRM",
+          "Брендированная страница магазина",
+          "Выделенная поддержка 24/7",
         ]}
         className="lg:col-span-8"
         cta="Связаться"
